@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84CA05C21BC7C3FA00B4A37E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA05C11BC7C3FA00B4A37E /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84CA05C41BC7C69600B4A37E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA05C31BC7C69600B4A37E /* PhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84DAE1581BC2CC96007FE406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE1571BC2CC96007FE406 /* AppDelegate.swift */; };
 		84DAE15A1BC2CC96007FE406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE1591BC2CC96007FE406 /* ViewController.swift */; };
 		84DAE15D1BC2CC96007FE406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DAE15B1BC2CC96007FE406 /* Main.storyboard */; };
 		84DAE15F1BC2CC96007FE406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DAE15E1BC2CC96007FE406 /* Assets.xcassets */; };
 		84DAE1621BC2CC96007FE406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DAE1601BC2CC96007FE406 /* LaunchScreen.storyboard */; };
+		84DAE16D1BC2D48F007FE406 /* FPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE16C1BC2D48F007FE406 /* FPButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84CA05C11BC7C3FA00B4A37E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		84CA05C31BC7C69600B4A37E /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		84DAE1541BC2CC96007FE406 /* ternopil-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ternopil-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DAE1571BC2CC96007FE406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DAE1591BC2CC96007FE406 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		84DAE15E1BC2CC96007FE406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DAE1611BC2CC96007FE406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DAE1631BC2CC96007FE406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DAE16C1BC2D48F007FE406 /* FPButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		84DAE1561BC2CC96007FE406 /* ternopil-app */ = {
 			isa = PBXGroup;
 			children = (
+				84DAE16A1BC2D446007FE406 /* Controller */,
+				84DAE1691BC2D435007FE406 /* View */,
 				84DAE1571BC2CC96007FE406 /* AppDelegate.swift */,
-				84DAE1591BC2CC96007FE406 /* ViewController.swift */,
 				84DAE15B1BC2CC96007FE406 /* Main.storyboard */,
 				84DAE15E1BC2CC96007FE406 /* Assets.xcassets */,
 				84DAE1601BC2CC96007FE406 /* LaunchScreen.storyboard */,
 				84DAE1631BC2CC96007FE406 /* Info.plist */,
 			);
 			path = "ternopil-app";
+			sourceTree = "<group>";
+		};
+		84DAE1691BC2D435007FE406 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84DAE16C1BC2D48F007FE406 /* FPButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84DAE16A1BC2D446007FE406 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84DAE1591BC2CC96007FE406 /* ViewController.swift */,
+				84CA05C11BC7C3FA00B4A37E /* AboutViewController.swift */,
+				84CA05C31BC7C69600B4A37E /* PhotoViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +161,9 @@
 			files = (
 				84DAE15A1BC2CC96007FE406 /* ViewController.swift in Sources */,
 				84DAE1581BC2CC96007FE406 /* AppDelegate.swift in Sources */,
+				84CA05C21BC7C3FA00B4A37E /* AboutViewController.swift in Sources */,
+				84DAE16D1BC2D48F007FE406 /* FPButton.swift in Sources */,
+				84CA05C41BC7C69600B4A37E /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +313,7 @@
 				84DAE1681BC2CC96007FE406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
